@@ -154,9 +154,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="2DMockUpPrj.h" />
+    <ClInclude Include="CCameraManager.h" />
     <ClInclude Include="CCollider.h" />
     <ClInclude Include="CCore.h" />
     <ClInclude Include="CGameObject.h" />
+    <ClInclude Include="CImageObject.h" />
     <ClInclude Include="CKeyManager.h" />
     <ClInclude Include="CPathManager.h" />
     <ClInclude Include="CPlayer.h" />
@@ -177,9 +179,11 @@
     <ClCompile Include="2DMockUpPrj.cpp">
       <DeploymentContent>false</DeploymentContent>
     </ClCompile>
+    <ClCompile Include="CCameraManager.cpp" />
     <ClCompile Include="CCollider.cpp" />
     <ClCompile Include="CCore.cpp" />
     <ClCompile Include="CGameObject.cpp" />
+    <ClCompile Include="CImageObject.cpp" />
     <ClCompile Include="CKeyManager.cpp" />
     <ClCompile Include="CPathManager.cpp" />
     <ClCompile Include="CPlayer.cpp" />
