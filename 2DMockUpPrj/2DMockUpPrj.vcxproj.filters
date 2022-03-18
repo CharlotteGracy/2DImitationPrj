@@ -60,9 +60,6 @@
     <ClInclude Include="CPathManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Logger.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="CCollider.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -76,6 +73,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="CCameraManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -7,10 +7,10 @@ CCollider::CCollider() {
 	m_pOwner = nullptr;
 
 }
-
-CCollider::CCollider() {
+CCollider::~CCollider() {
 
 }
+
 
 void CCollider::finalupdate() {
 	fPoint fptObjectPos = m_pOwner->GetPos();
