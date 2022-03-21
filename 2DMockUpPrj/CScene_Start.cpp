@@ -1,6 +1,7 @@
 #include "framework.h"
 #include "CScene_Start.h"
 #include "CGameObject.h"
+#include "CPlayer.h"
 
 CScene_Start::CScene_Start() {
 
@@ -10,16 +11,16 @@ CScene_Start::~CScene_Start() {
 }
 
 void CScene_Start::Enter() {
-	//object
+	
+	
 
-	/*
-	CGameObject* pObj = new CGameObject;
+	CGameObject* pPlayer = new CPlayer;
 
-	pObj->SetPos(fPoint(200, 200));
-	pObj->SetScale(fPoint(100, 100));
+	pPlayer->SetPos(fPoint(200, 200));
+	pPlayer->SetScale(fPoint(100, 100));
+	AddObject(pPlayer, GROUP_GAMEOBJ::PLAYER);
 
-	AddObject(pObj, GROUP_GAMEOBJ::DEFAULT);
-*/
+
 }
 
 void CScene_Start::Exit() {

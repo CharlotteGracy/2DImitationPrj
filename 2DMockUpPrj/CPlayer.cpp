@@ -3,22 +3,23 @@
 #include "CTexture.h"
 
 
-CPlayer::CPlayer() {
 
+CPlayer::CPlayer() {
+	/*
 	m_pTex = new CTexture;
 
 	wstring strFilepath = CPathManager::getInst()->GetContentPath();
 	strFilepath += L"texture\\Player.bmp";
 	m_pTex->Load(strFilepath);
-
+	*/
 }
 
 CPlayer::~CPlayer() {
-
+	/*
 	if (nullptr != m_pTex) {
 		delete m_pTex;
 	}
-
+	*/
 }
 
 
@@ -47,6 +48,8 @@ void CPlayer::update() {
 }
 
 void CPlayer::render(HDC hDC) {
+
+	/*
 	int iWidth = (int)(m_pTex->GetBmpWidth());
 	int iHeight = (int)(m_pTex->GetBmpHeight());
 
@@ -58,6 +61,17 @@ void CPlayer::render(HDC hDC) {
 		iWidth, iHeight,
 		m_pTex->GetDC(),
 		0, 0, SRCCOPY);
+		*/
+	Rectangle(hDC,
+		GetPos().x - GetScale().x / 2,
+		GetPos().y - GetScale().x / 2,
+		GetPos().x + GetScale().x / 2,
+		GetPos().y + GetScale().x / 2
+
+	);
+
+
+
 }
 
 
