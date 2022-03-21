@@ -61,3 +61,9 @@ void CCore::init() {
 
 
 }
+
+
+
+HDC CCore::GetMainDC() {
+	return m_hDC;
+}

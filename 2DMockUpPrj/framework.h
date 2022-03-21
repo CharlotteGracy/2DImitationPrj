@@ -35,6 +35,8 @@
 enum class GROUP_GAMEOBJ {
 	DEFAULT,
 	PLAYER,
+	MONSTER,
+	//BOMB,
 	SIZE,
 };
 
@@ -57,6 +59,11 @@ enum class GROUP_SCENE {
 #define WINSIZEX 1280
 #define WINSIZEY 720
 #define WINSTYLE		WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX
+
+#define fDT		CTimeManager::getInst()->GetDT()
+#define Key(key) CKeyManager::getInst()->GetButton(key)
+#define KeyUp(key) CKeyManager::getInst()->GetButton(key)
+#define KeyDown(key) CKeyManager::getInst()->GetButton(key)
 
 
 //=======================================
